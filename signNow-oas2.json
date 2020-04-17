@@ -722,22 +722,22 @@
                     "type": "object",
                     "properties": {
                       "id": {
-                        "type": "null"
+                        "type": "string"
                       },
                       "subscription_id": {
-                        "type": "null"
+                        "type": "string"
                       },
                       "name": {
-                        "type": "null"
+                        "type": "string"
                       },
                       "expired": {
                         "type": "integer"
                       },
                       "created": {
-                        "type": "null"
+                        "type": "integer"
                       },
                       "updated": {
-                        "type": "null"
+                        "type": "integer"
                       },
                       "plan": {
                         "type": "string"
@@ -752,7 +752,7 @@
                         "type": "boolean"
                       },
                       "term": {
-                        "type": "null"
+                        "type": "integer"
                       }
                     }
                   }
@@ -764,7 +764,7 @@
                   "type": "boolean"
                 },
                 "cloud_export_account_details": {
-                  "type": "null"
+                  "type": "object"
                 },
                 "is_logged_in": {
                   "type": "boolean"
@@ -802,10 +802,10 @@
                           "type": "string"
                         },
                         "first_name": {
-                          "type": "null"
+                          "type": "string"
                         },
                         "last_name": {
-                          "type": "null"
+                          "type": "string"
                         },
                         "added_date": {
                           "type": "integer"
@@ -825,25 +825,25 @@
                       "type": "object",
                       "properties": {
                         "serial_number": {
-                          "type": "null"
+                          "type": "string"
                         },
                         "name": {
-                          "type": "null"
+                          "type": "string"
                         },
                         "term": {
-                          "type": "null"
+                          "type": "integer"
                         },
                         "expired_at": {
                           "type": "integer"
                         },
                         "created_at": {
-                          "type": "null"
+                          "type": "integer"
                         },
                         "updated_at": {
-                          "type": "null"
+                          "type": "integer"
                         },
                         "key": {
-                          "type": "null"
+                          "type": "string"
                         }
                       }
                     },
@@ -1176,7 +1176,7 @@
                   }
                 },
                 "registration_source": {
-                  "type": "null"
+                  "type": "string"
                 }
               }
             }
@@ -1555,7 +1555,7 @@
                     "type": "string"
                   },
                   "origin_document_id": {
-                    "type": "null"
+                    "type": "string"
                   },
                   "owner": {
                     "type": "string"
@@ -1564,7 +1564,7 @@
                     "type": "boolean"
                   },
                   "origin_user_id": {
-                    "type": "null"
+                    "type": "string"
                   },
                   "thumbnail": {
                     "type": "object",
@@ -1701,22 +1701,22 @@
                           "type": "string"
                         },
                         "fulfiller": {
-                          "type": "null"
+                          "type": "string"
                         },
                         "field_request_id": {
-                          "type": "null"
+                          "type": "string"
                         },
                         "element_id": {
-                          "type": "null"
+                          "type": "string"
                         },
                         "field_request_canceled": {
-                          "type": "null"
+                          "type": "boolean"
                         },
                         "template_field_id": {
-                          "type": "null"
+                          "type": "string"
                         },
                         "field_id": {
-                          "type": "null"
+                          "type": "string"
                         }
                       }
                     }
@@ -1806,7 +1806,7 @@
                           "type": "string"
                         },
                         "updated": {
-                          "type": "null"
+                          "type": "integer"
                         },
                         "cc": {
                           "type": "array",
@@ -1821,7 +1821,7 @@
                           }
                         },
                         "invite_link_instructions": {
-                          "type": "null"
+                          "type": "string"
                         }
                       }
                     }
@@ -1868,16 +1868,16 @@
                     "type": "object",
                     "properties": {
                       "document_group_id": {
-                        "type": "null"
+                        "type": "string"
                       },
                       "document_group_name": {
-                        "type": "null"
+                        "type": "string"
                       },
                       "invite_id": {
-                        "type": "null"
+                        "type": "string"
                       },
                       "invite_status": {
-                        "type": "null"
+                        "type": "string"
                       },
                       "doc_count_in_group": {
                         "type": "integer"
@@ -2638,7 +2638,7 @@
         ]
       }
     },
-    " /document/{document_id}/historyfull": {
+    "/document/{document_id}/historyfull": {
       "get": {
         "responses": {
           "200": {
@@ -3497,7 +3497,7 @@
         }
       ]
     },
-    "/documentgroup/{document_group_id}/groupinvite/{invite_id}": {
+    "/documentgroup/{document_group_id}/groupinvite/{invite_id}'": {
       "get": {
         "responses": {
           "200": {
@@ -4305,7 +4305,7 @@
                   "type": "string"
                 },
                 "parent_id": {
-                  "type": "null"
+                  "type": "string"
                 },
                 "system_folder": {
                   "type": "boolean"
@@ -4337,10 +4337,7 @@
                         "type": "string"
                       },
                       "template_count": {
-                        "type": [
-                          "integer",
-                          "string"
-                        ]
+                        "type": "string"
                       },
                       "folder_count": {
                         "type": "string"
