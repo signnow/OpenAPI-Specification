@@ -1,2 +1,1 @@
 # OpenAPI-Specification
-# OpenAPI-Specification
