@@ -9,7 +9,7 @@ To get your account, register at https://www.signnow.com/developers
 
 ## Get started
 
-OpenAPI specification - a single file that describes API (endpoints and operations, input and output parameters, authentication methods, license etc.), in YAML or JSON format.
+OpenAPI specification (previously - "Swagger specification") - a single file that describes API (endpoints and operations, input and output parameters, authentication methods, license etc.), in YAML or JSON format.
 
 signNow OpenAPI Specification combines endpoints that cover various steps of e-signature workflows: document uploads, using templates, sending documents out to be signed, verifying and managing users, storing signed copies, automating bulk operations with document groups.
 
